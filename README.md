@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Books for Sale
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+link to app on vercel: https://csci1300-development-liart.vercel.app/ 
+
+### Bugs:
+- only able to do one filter at a time (like can't have horror and fantasy)
+- every time your swtich a filter it resets the sorting as well
 
 ## Available Scripts
 
@@ -68,3 +72,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
