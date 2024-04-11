@@ -34,8 +34,13 @@ function App() {
     setCartPrice(0.0);
   };
 
-  const sortByPrice = () => {
+  const sortByPriceLow = () => {
     const sorted = [...filteredBooks].sort((a, b) => a.price - b.price);
+    setFilteredBooks(sorted);
+  };
+
+  const sortByPriceHigh = () => {
+    const sorted = [...filteredBooks].sort((a, b) => b.price - a.price);
     setFilteredBooks(sorted);
   };
 
@@ -56,29 +61,34 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Book's for Sale </h1> {/* TODO: personalize your bakery (if you want) */}
+      <h1 id="title">Book's for Sale </h1> {/* TODO: personalize your bakery (if you want) */}
 
-      <div>
-        <SortButton onClick={sortByPrice} text="Sort by Price" />
-        <SortButton onClick={sortByName} text="Sort by Name" />
+      <div class="changeBar">
+        <SortButton onClick={sortByPriceLow} text="Sort Price Low to High" />
+        <SortButton onClick={sortByPriceHigh} text="Sort Price High to Low" />
+        <SortButton onClick={sortByName} text="Sort by Name a-z" />
+        
         <FilterButton onClick={() => filterByGenre("Children's Books")} text="Children's Books" />
         <FilterButton onClick={() => filterByGenre("Horror")} text="Horror" />
         <FilterButton onClick={() => filterByGenre("Textbook")} text="Textbooks" />
         <FilterButton onClick={() => filterByGenre("Science Fiction")} text="Science Fiction" />
         <FilterButton onClick={() => filterByGenre("Fantasy")} text="Fantasy" />
-
-        <FilterButton onClick={() => filterByPages(50, 100)} text="Pages 50-100" />
-        <FilterButton onClick={() => filterByPages(0, 50)} text="Pages 0-50" />
+        <FilterButton onClick={() => filterByPages(1, 50)} text="Pages <= 50" />
+        <FilterButton onClick={() => filterByPages(51, 100)} text="Pages 51-100" />
         <FilterButton onClick={() => filterByPages(100, 200)} text="Pages 100-300" />
         <FilterButton onClick={() => filterByPages(200, 10000)} text="Pages 300+" />
-        <ClearButton onClick={clearChanges} text="Clear All Changes" />
       </div>
 
+      <div class="clearSection">
+      <ClearButton onClick={clearChanges} text="Clear All Changes" />
+      </div>
+      <div class="bookSection">
       {filteredBooks.map((item, index) => (
         <BookItem
           key={index}
           name={item.name}
-          description={item.description}
+          genre={item.genre}
+          pages={item.pages}
           price={item.price}
           image={item.image}
           updateCart={setCart}
@@ -88,7 +98,11 @@ function App() {
         />
       ))}
 
-      <div>
+      </div>
+
+<div id="line"></div>
+
+      <div class="cartSection">
         <h2>Cart</h2>
         {/* TODO: render a list of items in the cart */}
         <Cart cartItems={cart} cartPrice={cartPrice} curPrice={cartPrice}/>

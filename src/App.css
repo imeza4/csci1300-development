@@ -1,9 +1,164 @@
 /* Add styling for your page here */
 
 .App {
-
-}
-
-.BookItem {
+    display: grid; /* or display: grid; */
+    align-items: center; /* Center content vertically */
+    margin-bottom: 20px;
+    background-color: #F4FFF8;
+  }
   
+#title{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 3rem;
 }
+
+.changeBar{
+    padding: 0vh 50vh 0vh 50vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.changeBar button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #CFDCDE;
+}
+.clearSection{
+    display:flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.bookSection{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 1200px;
+    
+}
+
+.bookSection button{
+    background-color: #F2F1F9;
+    border: solid;
+    border-color: #D7D4ED;
+}
+
+.BookItems {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #F2F1F9;
+  }
+
+ 
+  /* Book item image */
+  .BookItems img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Book item title */
+  .BookItems h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  /* Book item details */
+  .BookItems p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  /* Book item price */
+  .BookItems .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .cartSection{
+    text-align: center;
+    padding-top: 4vh; 
+
+  }
+  
+  /* Cart container */
+  .Cart {
+    margin-top: 20px;
+    padding: 2vh 40vh 2vh 40vh;
+    align-items: center;
+  }
+  
+  /* Cart item */
+  .cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align:left;
+    background-color: white;
+  }
+  
+  /* Total section */
+  .cart h1 {
+    font-size: 18px;
+  }
+  
+  /* Buttons container */
+  .Buttons {
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin-bottom: 20px;
+  }
+  
+  button{
+    padding: 10px 20px;
+    min-width: 120px; 
+    height: 40px; 
+    background-color: #F1E4E8;
+    color: #000F08;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+
+  /* Sorting and filtering buttons */
+  .SortButton, .FilterButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .SortButton:hover, .FilterButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .SortButton, .FilterButton {
+    margin-right: 10px;
+  }
+
+  #line{
+    width: 150vh;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 2px solid #F4B3B3;
+    border-radius: 2px;
+  }
