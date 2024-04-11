@@ -4,111 +4,127 @@
     "price": 14.99, 
     "genre": "Children's Books", 
     "pages": 10, 
-    "rating": 5
+    "rating": 5,
+    "image": "images/basic_book.png"
   },
   {
     "name": "Animals in the United States",  
     "price": 15.99, 
     "genre": "Children's Books", 
     "pages": 50, 
-    "rating": 3.5
+    "rating": 3.5,
+    "image": "images/basic_book.png"
   },
   {
     "name": "It's here",  
     "price": 29.75, 
     "genre": "Horror", 
     "pages": "372", 
-    "rating": 4
+    "rating": 4,
+    "image": "images/basic_book.png"
   },
 {
     "name": "Applied Regressino Analysis, Linear Models, and Related Methods", 
     "price": 102.99, 
     "genre": "Textbook", 
     "pages": 489, 
-    "rating": 1
+    "rating": 1,
+    "image": "images/basic_book.png"
   },
   {
     "name": "At the Edge of the World", 
     "price": 19.99, 
     "genre": "Science Fiction", 
     "pages": 78, 
-    "rating": 4.1
+    "rating": 4.1,
+    "image": "images/basic_book.png"
   },
   {
     "name": "The Art of Burning", 
     "price": 24.99, 
     "genre": "Fantasy", 
     "pages": 389, 
-    "rating": 4.8
+    "rating": 4.8,
+    "image": "images/basic_book.png"
   },
   {
     "name": "Molly", 
     "price": 68.98, 
     "genre": "Horror", 
     "pages": 210, 
-    "rating": 3.2
+    "rating": 3.2,
+    "image": "images/basic_book.png"
   },
   {
     "name": "Empirical Methods in Law, Third Edition", 
     "price": 99.99, 
     "genre": "Textbook", 
     "pages": 700, 
-    "rating": 2.9
+    "rating": 2.9,
+    "image": "images/basic_book.png"
   },
   {
     "name": "History of the Dawes Roll", 
     "price": 49.75, 
     "genre": "Non-Fiction", 
     "pages": 500, 
-    "rating": 2
+    "rating": 2,
+    "image": "images/basic_book.png"
   },
   {
     "name": "Crashing like Stars", 
     "price": 24.99, 
     "genre": "Science Fiction", 
     "pages": 189, 
-    "rating": 1
+    "rating": 1,
+    "image": "images/basic_book.png"
   },
   {
     "name": "Space Ferrets", 
     "price": 29.99, 
     "genre": "Science Fiction", 
     "pages": 450, 
-    "rating": 2.8
+    "rating": 2.8,
+    "image": "images/basic_book.png"
   },
   {
     "name": "Leopards", 
     "price": 14.99, 
     "genre": "Non-Fiction", 
     "pages": 256, 
-    "rating": 3.2
+    "rating": 3.2,
+    "image": "images/basic_book.png"
   },
   {
     "name": "Kintsugi", 
     "price": 10.50, 
     "genre": "Fantasy", 
     "pages": 88, 
-    "rating": 4.5
+    "rating": 4.5,
+    "image": "images/basic_book.png"
   },
   {
     "name": "Green Eggs and Ham", 
     "price": 24.75, 
     "genre": "Children's Books", 
     "pages": 25, 
-    "rating": 5
+    "rating": 5,
+    "image": "images/basic_book.png"
   },
   {
     "name": "Integrals and Calculus", 
     "price": 44.99, 
     "genre": "Textbook", 
     "pages": 560, 
-    "rating": 2.2
+    "rating": 2.2,
+    "image": "images/basic_book.png"
   },
   {
     "name": "Harry Potter", 
     "price": 18.72, 
     "genre": "Fantasy", 
     "pages": 149, 
-    "rating": 1.7
+    "rating": 1.7,
+    "image": "images/basic_book.png"
   }
 ]
