@@ -1,6 +1,6 @@
 
 
-export default function BakeryButton(props){
+export default function BookButton(props){
 
 function handleClick(){
     let newItem = true;
@@ -42,7 +42,7 @@ function handleClick(){
 }
 
     return (
-        <div className="BakeryButton">
+        <div className="BookButton">
         <button onClick={handleClick}>Add to Cart</button>
         </div>
         );

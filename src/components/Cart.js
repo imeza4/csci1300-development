@@ -9,6 +9,7 @@ export default function Cart(props) {
               <h1>Cart</h1>
               <p>Add to Cart to see something in here</p>
             </div>
+            <h1>Total: $0.00</h1>
           </div>
         </div>
       );
