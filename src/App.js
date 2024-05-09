@@ -61,7 +61,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 id="title">Book's for Sale </h1> {/* TODO: personalize your bakery (if you want) */}
+      <h1 id="title">Books for Sale </h1> {/* TODO: personalize your bakery (if you want) */}
 
       <div class="changeBar">
         <SortButton onClick={sortByPriceLow} text="Sort Price Low to High" />
